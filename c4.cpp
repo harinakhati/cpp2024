@@ -2,13 +2,13 @@
 using namespace std;
 int main() {
     int n,temp;
-    cout << "Enter the number of elements: ";
+    cout << "Enter the number: ";
     cin >> n;
-    int arr[n];
-    cout << "Enter the elements: ";
-    for (int i = 0; i < n; i++) {
-        cin >> arr[i];
-     temp=n%i;
+    for(int i=1;i<=n;i++)
+    {
+     if(n%i==0)
+     temp++;
+    }
      if(temp==2)
      {
         cout<<"prime";
@@ -17,6 +17,6 @@ int main() {
      {
         cout<<"composite";
     }
-    }
+    
     return 0;
 }
