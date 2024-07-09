@@ -27,7 +27,7 @@
                     Distance maxDistance(Distance d)
                     {
                         Distance temp;
-                        if(feet>d.feet|| (feet == d.feet && inches > d.inches))
+                        if(feet>d.feet|| (feet == d.feet && inches > d.inches))     
                         {
                             temp.feet=feet;
                             temp.inches=inches;
