@@ -46,7 +46,7 @@ class Time
                         {
                             Time t1(1,40,50);
                             Time t2(2,40,50);
-                            Time t3;
+                            Time t3(0,0,0);
                             t3=t1+t2;
                             t3.display();
                             return 0;
