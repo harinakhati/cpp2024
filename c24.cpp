@@ -47,10 +47,12 @@ class DM
                             DB f;
                             f.f=d.f+e.f;
                             f.i=d.i+e.i;
-                            if(f.i>=12){
-                            	f.f++;
-                            	f.i-=12;
-							}
+                           
+                            if(f.i>=12)
+                            {
+                            f.f=f.f+f.i/12;
+                             f.i=f.i%12;
+                             }
                             return f;
                             }
                             DM operator+(DM a,DM b)
@@ -58,11 +60,12 @@ class DM
                                 DM c;
                                 c.m=a.m+b.m;
                                 c.c=a.c+b.c;
-                                if(c.c>=100)
+                               
+                                 if(c.c>=100)
                                 {
-                                	c.m++;
-                                	c.c-=100;
-								}
+                                 c.m=c.m+c.c/100;
+                                 c.c=c.c%100;
+                                 }
                                 return c;
                             }
                             int main()
