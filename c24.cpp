@@ -40,18 +40,18 @@ class DM
                         cout<<"The value of feet and inches is "<<f<<"ft "<<i<<"in"<<
                         endl;
                         }
-                        friend DB operator+(DB a,DB b);
+                        friend DB operator+(DB d,DB e);
                         };
-                        DB operator+(DB a,DB b)
+                        DB operator+(DB d,DB e)
                         {
-                            DB c;
-                            c.f=a.f+b.f;
-                            c.i=a.i+b.i;
-                            if(c.i>=12){
-                            	c.f++;
-                            	c.i-=12;
+                            DB f;
+                            f.f=d.f+e.f;
+                            f.i=d.i+e.i;
+                            if(f.i>=12){
+                            	f.f++;
+                            	f.i-=12;
 							}
-                            return c;
+                            return f;
                             }
                             DM operator+(DM a,DM b)
                             {
@@ -67,11 +67,15 @@ class DM
                             }
                             int main()
                             {
-                                DM d1,d2,d3;
-                                DB d4,d5,d6;
-                                d3=d1+d2;
-                                d6=d4+d5;
-                                d3.display();
-                                d6.display();
+                                DM a,b,c;
+                                DB d,e,f;
+                                a.getdata();
+                                b.getdata();
+                                c=a+b;
+                                d.getdata();
+                                e.getdata();
+                                f=d+e;
+                                c.display();
+                                f.display();
                                 return 0;
                             }
