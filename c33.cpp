@@ -1,4 +1,4 @@
-/*Write a program in C++ that overloads unary operator - -*/
+/*Write a program in C++ that overloads unary operator -*/
 #include<iostream>
 using namespace std;
 class Space
@@ -20,20 +20,17 @@ class Space
             {
                 cout<<"("<<x<<","<<y<<","<<z<<")"<<endl;
                 }
-                void operator --(int)
+                void operator -()
                 {
-                   x--;
-                   y--;
-                   z--;
+                   x=-x;
+                   y=-y;
+                   z=-z;
                     }
 };
 int main()
 {
     Space s(1,2,3);
-    s--;
+    -s;
     s.display();
     return 0;
 }
-    
-
-
