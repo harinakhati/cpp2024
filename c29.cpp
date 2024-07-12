@@ -23,7 +23,7 @@ class Time
         {
             cout<<"Time is "<<hr<<":"<<min<<":"<<sec<<endl;
             }
-            Time operator+(Time t)
+            Time add(Time t)
             {
                 Time temp;
                 temp.hr=hr+t.hr;
@@ -47,7 +47,7 @@ class Time
                             Time t1(1,40,50);
                             Time t2(2,40,50);
                             Time t3(0,0,0);
-                            t3=t1+t2;
+                            t3=t1.add(t2);
                             t3.display();
                             return 0;
                         }
