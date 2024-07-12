@@ -1,5 +1,5 @@
 /*Write a program in C++ to concatenate two string by overloading
-binary operator "+" using friend function*/
+binary operator ‘+’ using friend function*/
 #include<iostream>
 #include<string.h>
 using namespace std;
@@ -38,7 +38,6 @@ String operator+(String &s1,String &s2)
     strcat(temp.s,s2.s);
     return temp;
 }
-
 int main()
 {
     String s1("Hello");
