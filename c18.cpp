@@ -42,9 +42,20 @@
   };
                                 int main()
                                 {
-                                    Distance d1(2,11);
-                                    Distance d2(3,12);
-                                    Distance d3;
+                                    int feet1, inches1, feet2, inches2;
+
+    // Read input from user
+    cout << "Enter the first distance (feet inches): ";
+    cin >> feet1 >> inches1;
+    cout << "Enter the second distance (feet inches): ";
+    cin >> feet2 >> inches2;
+    // Create Distance objects
+    Distance d1(feet1, inches1);
+    Distance d2(feet2, inches2);
+Distance d3;
+    // Compare and display the larger distance
+    
+                                   
                                     d3=d1.maxDistance(d2);
                                     cout << "The larger distance is: " << endl;
                                     d3.display();
