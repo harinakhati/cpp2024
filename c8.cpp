@@ -1,3 +1,5 @@
+//same as c7
+
 #include <iostream>
 using namespace std;
 float SimpleInterest(float principal, float rate = 2.5, int time = 1) 
