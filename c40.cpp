@@ -12,27 +12,28 @@ class String
     public:
         String(){
             len=0;
-            s=new char(len+2);
+            s=new char(len+1);
             strcpy(s," ");
         }
         String (char *n)
         {
             len=strlen(n);
-            s=new char(len+2);
+            s=new char(len+1);
             strcpy(s,n);
         }
         void display()
         {
             cout<<s<<endl;
         }
-        friend String operator+(String &s1,String &s2);
+        friend String operator+(const String &s1,const String &s2);
+        
 };
 
-String operator+(String &s1,String &s2)
+String operator+(const String &s1,const String &s2)
 {
     String temp;
     temp.len=s1.len+s2.len;
-    temp.s=new char(temp.len+2);
+    temp.s=new char(temp.len+1);
     strcpy(temp.s,s1.s);
     strcat(temp.s," ");
     strcat(temp.s,s2.s);
