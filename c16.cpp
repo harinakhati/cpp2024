@@ -19,7 +19,7 @@ void zeroSmaller(int &a, int &b)
                 cout << "Enter two numbers: ";
                 cin >> a >> b;
                 zeroSmaller(a, b);
-                cout << "//The smaller number is: " << "0"<< endl;
+                cout << "The smaller number is: " << "0"<< endl;
                 cout << "The number is: " << a << endl;
                 cout << "The number is: " << b << endl;
                 return 0;

@@ -19,8 +19,8 @@ double power(double m,int n=2)
             int n=2;
             cout<<"Enter the value of m: ";
             cin>>m;
-           // cout<<"Enter the value of n: ";
-            //cin>>n;
+//            cout<<"Enter the value of n: ";
+//            cin>>n;
             cout<<"The result is: "<<power(m,n);
             return 0;
         }
