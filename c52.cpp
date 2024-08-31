@@ -1,27 +1,23 @@
 /* Write a C++ program to handle divide by zero exception */
 #include <iostream>
-// #include <stdexcept>
+#include <stdexcept>
 using namespace std;
 int main()
 {
-    float num1,num2,result;
-    cout<<"Enter two number: ";
-    cin>>num1>>num2;
+    int a,b,c;
+    cout<<"Enter numbers"<<endl;
+    cin>>a>>b;
     try
     {
-        if(num2!=0)
-        {
-            result=num1/num2;
-            cout<<"Result: "<<result;
+        if(b=0)
+        throw(b);
+        c=a/b;
+        cout<<a<<"/"<<b<<"="<<c<<endl;
         }
-        else
-        {
-            throw num2;
-    }
-    catch(num2 e)
+        catch(int exp)
     {
-        cout<<"The divisor must be non-zero value";
-        cout<<endl<<"Try again for another divisor";
+       cout<<"A problem called by zero occured"<<endl;
     }
+    cout<<"End of Program"<<endl;
     return 0;
-}
+    }
