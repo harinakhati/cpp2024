@@ -1,4 +1,4 @@
-/* Write C ++ program to demonstrate “this” pointer */
+/* Write C ++ program to demonstrate "this" pointer */
 #include<iostream>
 using namespace std;
 class Person
