@@ -1,4 +1,4 @@
-//Write an object to file
+//Write an object to file and reads the object from file.
 #include<iostream>
 #include<fstream>
 #include<conio.h>
@@ -27,7 +27,7 @@ int main()
 {
 	fstream file;
 	Employee e;
-	file.open("D:\\Utshah C++\\file2.rec",ios::in|ios::out|ios::trunc);
+	file.open("D:\\Harina Khati\\cpp2024\\file2.rec",ios::in|ios::out|ios::trunc);
 	if(file.fail())
 	{
 		cout<<"File not opened"<<endl;

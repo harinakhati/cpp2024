@@ -1,3 +1,4 @@
+//WAP to write line of text to a file.
 #include<iostream>
 #include<fstream>
 #include<conio.h>
@@ -9,7 +10,7 @@ int main()
 	char ch;
 	char str[]={"abcdefghijklmnopqrstuvwxyz"};
 	int len;
-	file.open("D:\\Utshah C++\\file1.txt",ios::in|ios::out|ios::trunc);
+	file.open("D:\\Harina Khati\\cpp2024\\file1.txt",ios::in|ios::out|ios::trunc);
 	if(file.fail())
 	{
 		cout<<"File not created for some reason"<<endl;

@@ -1,4 +1,4 @@
-//WAP in C++ to implement tempolate class
+//WAP in C++ to create template class called stack. Implement two functions push and pop.
 #include<iostream>
 using namespace std;
 #define N 5

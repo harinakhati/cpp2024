@@ -1,3 +1,4 @@
+//WAP that reads line of text from file
 #include <iostream>
 #include <fstream>
 using namespace std;
@@ -5,7 +6,7 @@ using namespace std;
 int main() {
     fstream file;
     char ch;
-    file.open("D:\\Utshah C++\\file1.txt", ios::in);
+    file.open("D:\\Harina Khati\\cpp2024\\file1.txt", ios::in);
     if (file.fail()) {
         cout << "File could not be opened." << endl;
         return 1;
