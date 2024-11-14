@@ -1,5 +1,5 @@
-/*Write a program in C++ to read two matrices of size m*n from the keyboard and then find sum and product of these two matrices.
- Use function to read, to find sum and to find product.*/
+/*Write a program in C++ to read two matrices of size m*n from the keyboard and then find sum and 
+product of these two matrices.Use function to read, to find sum and to find product.*/
  #include<iostream>
 using namespace std;
 void readMatrix(int matrix[][10], int m, int n) {

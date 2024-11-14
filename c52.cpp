@@ -1,4 +1,4 @@
-//56.	Write a C++ program to handle divide by zero exception
+//	Write a C++ program to handle divide by zero exception
 #include<iostream>
 using namespace std;
 int main()
